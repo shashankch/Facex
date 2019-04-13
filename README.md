@@ -6,8 +6,8 @@ https://github.com/ageitgey/face_recognition
 This project uses Dlib by Davis King.
 https://github.com/davisking/dlib.
 
-This Application provides GUI to perform complex facial Recognition and Tracking Tasks. 
-
+This Application provides GUI to perform complex Modern facial Recognition(using Deep learning) and Tracking Tasks. 
+It provides features like creating account,uploading images/creating dataset and Training classifier,realtime tracking and detailed report in PDF format containing facial measurements,probability etc.
 
 
 
