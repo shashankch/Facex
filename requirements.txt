@@ -1,0 +1,19 @@
+numpy==1.16.1
+opencv-python==4.0.0.21
+Pillow==5.4.1
+Click==7.0
+matplotlib==3.0.3
+scikit-learn==0.20.3
+scipy==1.2.1
+dlib==19.8.1
+cmake==3.13.3
+face-recognition==1.2.2
+face-recognition-models==0.3.0
+facenet==1.0.3
+Django==2.1.7
+reportlab==3.5.13
+django-crispy-forms==1.7.2
+requests==2.21.0
+urllib3==1.24.1
+pip version==19.0.3
+Virtualenv
