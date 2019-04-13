@@ -10,7 +10,7 @@ https://github.com/davisking/dlib.
 This Application provides GUI to perform complex Modern facial Recognition(using Deep learning) and Tracking Tasks. 
 It provides features like creating account,uploading images/creating dataset and Training classifier,realtime tracking and detailed report in PDF format containing facial measurements,probability etc.
 
-
+Packages used in this project are mentioned in 'requirements.txt'.
 
 
 
