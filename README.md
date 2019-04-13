@@ -1,8 +1,12 @@
 # Facex
 Facial Recognition and Tracking Application using Django.
 
+This project uses Face_Recognition API by Adam Geitgey.
+https://github.com/ageitgey/face_recognition
+This project uses Dlib by Davis King.
+https://github.com/davisking/dlib.
 
-
+This Application provides GUI to perform complex facial Recognition and Tracking Tasks. 
 
 
 
