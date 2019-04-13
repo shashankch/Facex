@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+	<a class="navbar-brand" href="#">Welcome to Facial Recognition and Tracking System</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+
+
+			<li class="nav-item active">
+				<a class="nav-link" href="#">Hello user: {{request.user}}</a>
+			</li>
+
+			<li class="nav-item active ">
+				<a class="nav-link " href="{% url 'logout' %}">Logout</a>
+			</li>
+
+
+		</ul>
+	</div>
+</nav>
+
+
+{% endblock navbar %}
+
+
+{% block cont  %}
+<div class="row justify-content-center" style="margin-top: 10px;">
+
+	<div class="card " style="width: auto;">
+
+		<div class="card-body">
+<div class="container">
+<form action='.' method='POST'> {% csrf_token %}
+	<h1 class="display-4">Face Recognition Process: </h1>
+	<p>
+		<ul>
+			<li>Step 1: Face detection using HOG(Histogram of oriented gradients).</li>
+			<li>Step 2: Posing and Projecting Faces using Face Landmark Estimation Technique(68 specific points). </li>
+			<li>Step 3: Face Encoding (128 measurements of face/Embedding) using Pretrained Deep Neural Network(Dlib-Resnet).</li>
+			<li>Step 4: Finding Person's name from the Face Encoding using Tolerance threshold Here it is set to '0.5'(by Experimentation).</li>
+		</ul>
+	</p>
+	<p align="center"> <button type='submit' value='START' class="btn btn-success btn-lg"><span
+				class="spinner-grow spinner-grow-sm"></span>
+		START
+		<i class='fas fa-video' style='font-size:30px'></i>
+		</button>
+ </p>
+	<h4 style="color:tomato" align="center">
+		!!Please press keyboard key 'q' to stop webcam !!
+	</h4>
+	<h4 align="center"><a href="{% url 'results' %}">CLICK TO GET RESULTS!</a></h4>
+	<h6><a href="{% url 'home' %}">Go back to Home page!</a></h6>
+
+	
+		
+
+		
+
+
+
+</form>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+{% endblock  %}
+<!-- <a href="../">cancel</a> -->

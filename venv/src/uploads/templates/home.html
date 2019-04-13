@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+<nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+  <a class="navbar-brand" href="#">Welcome to Facial Recognition and Tracking System</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Hello user: {{request.user}}</a>
+      </li>
+
+      <li class="nav-item active ">
+        <a class="nav-link " href="{% url 'logout' %}">Logout</a>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+
+{% endblock navbar %}
+
+{% block cont %}
+
+<div class="container">
+<div class="row justify-content-center" style="margin-top: 10px;">
+  
+<div class="card " style="width: auto;">
+
+<div class="card-body">
+<div class="container">
+  
+      <h1 class="display-4">Please upload image file before starting facial recognition system !</h1>
+      <h1 class="display-4" align="center"><a href="{% url 'model_form_upload' %}">Click to upload</a></h1>
+</div>
+
+<div class="container justify-content-center">
+  
+    <h4>Uploaded files:</h4>
+    <table class="table table-striped table-hover">
+      <thead class="thead-light">
+        <tr>
+          <th>ImageFile</th>
+          <th>Uploaded at</th>
+          <th>Details</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for obj in documents %}
+        <tr>
+        <td>
+        <img src="{{obj.document.url}}" class="rounded-circle img-fluid" alt="{{ obj.document.name }}"
+          style="width:100px;height:100px;" />
+        </td>
+        <td>{{ obj.uploaded_at }}</td>
+        <td>{{ obj.description }}</td>
+        <td>
+        <form action="{% url 'delete_view' id=obj.id %}" method="post">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-danger btn-sm" >Delete
+        </button>
+        </form>
+        </td>
+        </tr>
+      {% endfor %}
+        
+      </tbody>
+      </table>
+    
+  </div>
+  
+<div class="container" align="center">
+  <!-- <img src="./person.png" class="img-fluid" alt="{{ obj.document.name }}"> -->
+  <h1 class="display-4"><a href="{% url 'face_recognition' %}">Start Face Recognition</a></h1>
+  <h1 class="display-4"><a href="{% url 'train_view' %}">Train a Classifier on your dataset</a></h1>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+  </div>
+{% endblock %}
+
+
+<!-- <li>
+  <!-- <a href="{% url 'simple_upload' %}">Simple Upload</a> -->
+<!-- </li> -->
+<!-- {{ obj.document.url }} -->

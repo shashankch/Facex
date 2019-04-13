@@ -1,0 +1,20 @@
+<!-- templates/signup.html -->
+{% extends 'base.html' %}
+
+
+  
+{% load crispy_forms_tags %}
+{% block title %}Sign Up{% endblock %}
+  {% block content %}
+
+
+  <form method="post" class="form-group">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary btn-block">Sign up</button>
+    <a href="{% url 'login' %}">Go back to login!</a>
+  </form>
+
+  {% endblock %}
+
+
