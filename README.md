@@ -16,6 +16,7 @@ Packages used in this project are mentioned in 'requirements.txt'.
 
 
 Project Screenshots:
+
 ![image](https://user-images.githubusercontent.com/21042676/57398697-44fb0480-71ed-11e9-8a6e-79d9bcaebdd2.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398706-4b897c00-71ed-11e9-8f63-dbf3f7c76520.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398720-547a4d80-71ed-11e9-9b9d-6f66a83e1732.png)
