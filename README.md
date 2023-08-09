@@ -1,20 +1,19 @@
 # Facex
 Facial Recognition and Tracking Application using Deep Learning.
 
-This project uses Face_Recognition API by Adam Geitgey.
+## Overview
+Developed web application to perform modern face recognition using deep learning and transfer learning approach. Researched available pre-trained models and algorithms providing better accuracy and requiring less computation.
+
+## Features
+- It has features like creating the dataset from uploaded images, training the classifier, creating a PDF report with facial measurements, and matching probability. Other features like account sign in/up. Used Dlib Resnet Pre-Trained Model and Face_Recognition API.
+- This UI is built using Django Framework.
+- Python Libraries used in this project are mentioned in 'requirements.txt'.
+
+## Credits
+- This project uses Face_Recognition API by Adam Geitgey.
 https://github.com/ageitgey/face_recognition
-
-This project uses Dlib by Davis King.
+- This project uses Dlib by Davis King.
 https://github.com/davisking/dlib.
-
-GUI using Django Framework.
-
-This Application provides GUI to perform complex Modern facial Recognition(using Deep learning) and Tracking Tasks. 
-It provides features like creating account,uploading images/creating dataset and Training classifier,realtime tracking and detailed report in PDF format containing facial measurements,probability etc.
-
-Packages used in this project are mentioned in 'requirements.txt'.
-
-
 
 
 Project Screenshots:
