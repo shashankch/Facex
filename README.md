@@ -9,13 +9,6 @@ Developed web application to perform modern face recognition using deep learning
 - This UI is built using Django Framework.
 - Python Libraries used in this project are mentioned in 'requirements.txt'.
 
-## Credits
-- This project uses Face_Recognition API by Adam Geitgey.
-https://github.com/ageitgey/face_recognition
-- This project uses Dlib by Davis King.
-https://github.com/davisking/dlib.
-
-
 Project Screenshots:
 
 ![image](https://user-images.githubusercontent.com/21042676/57398697-44fb0480-71ed-11e9-8a6e-79d9bcaebdd2.png)
@@ -26,6 +19,13 @@ Project Screenshots:
 ![image](https://user-images.githubusercontent.com/21042676/57398747-622fd300-71ed-11e9-97d6-a3f18dbcc3af.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398607-0feeb200-71ed-11e9-9818-fb39ad76731f.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398676-3b719c80-71ed-11e9-83ad-4b9adcb17d68.png)
+
+
+#### Credits
+- This project uses Face_Recognition API by Adam Geitgey.
+https://github.com/ageitgey/face_recognition
+- This project uses Dlib by Davis King.
+https://github.com/davisking/dlib.
 
 #### Next Steps
 - Improvements in the UI.
