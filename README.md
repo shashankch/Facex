@@ -26,3 +26,10 @@ Project Screenshots:
 ![image](https://user-images.githubusercontent.com/21042676/57398747-622fd300-71ed-11e9-97d6-a3f18dbcc3af.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398607-0feeb200-71ed-11e9-9818-fb39ad76731f.png)
 ![image](https://user-images.githubusercontent.com/21042676/57398676-3b719c80-71ed-11e9-83ad-4b9adcb17d68.png)
+
+#### Next Steps
+- Improvements in the UI.
+- Explore other possible algorithms/libraries/fwks to achieve better results.
+
+#### Contribution
+- All contributions/suggestions are welcome!
